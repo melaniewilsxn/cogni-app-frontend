@@ -10,7 +10,7 @@ import TestimonialList from "./TestimonialList"
 function App() {
   return (
     <div>
-      <h1>App!</h1>
+      <h1>Cogni</h1>
       <NavBar />
       <Switch>
         <Route exact path="/">
