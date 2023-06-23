@@ -5,11 +5,12 @@ import Home from "./Home"
 import About from "./About"
 import TutorList from "./TutorList"
 import Contact from "./Contact"
-import TestimonialList from "Testimonial"
+import TestimonialList from "./TestimonialList"
 
 function App() {
   return (
     <div>
+      <h1>App!</h1>
       <NavBar />
       <Switch>
         <Route exact path="/">
