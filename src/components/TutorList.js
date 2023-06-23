@@ -1,18 +1,11 @@
 import React, { useState, useEffect } from "react"
 import { Container, Card } from "semantic-ui-react";
 import TutorCard from "./TutorCard"
+import { tutors } from "../data"
 
 function TutorList(){
 
-    const [tutorList, setTutorList] = useState([])
-
-    useEffect(() => {
-        fetch("http://localhost:3001/tutors")
-        .then(res => res.json())
-        .then(data => setTutorList(data))
-    }, [])
-
-    const displayTutor = tutorList.map((tutor) => {
+    const displayTutor = tutors.map((tutor) => {
         return <TutorCard tutor={tutor} key={tutor.id}/>
     })
 
