@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { Container, Card } from "semantic-ui-react";
 import TutorCard from "./TutorCard"
 import { tutors } from "../data"

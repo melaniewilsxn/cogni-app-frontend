@@ -2,14 +2,12 @@ import React from "react"
 import { Card } from "semantic-ui-react";
 
 function TutorCard({tutor}){
-    console.log(tutor)
+
     return(
         <Card>
-            <div className="image">
-                <img src={tutor.image} />
-            </div>
-            <div>
-                <div>{tutor.name}</div>
+            <img className= "image" src={tutor.image} alt={tutor.name}/>
+            <div className="content">
+                <h2>{tutor.name}</h2>
             </div>
         </Card>
     )
